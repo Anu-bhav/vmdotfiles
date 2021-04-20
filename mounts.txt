@@ -1,0 +1,5 @@
+sudo vmhgfs-fuse .host:/HackTheBox /home/kali/htb  -o subtype=vmhgfs-fuse,allow_other
+
+/etc/fstab
+.host:/HackTheBox    /home/kali/htb        fuse.vmhgfs-fuse    defaults,allow_other    0    0
+.host:/VMShared    /home/kali/vmshared        fuse.vmhgfs-fuse    defaults,allow_other    0    0
